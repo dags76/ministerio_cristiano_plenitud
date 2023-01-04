@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+.btn{
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 4px;
+    width: 120px;
+    padding: .7rem 0;
+    text-align: center;
+    background-color: hsla(170, 83%, 39%);
+}
+.header__title,
+.header__subtitle,
+.sections__titles{
+   margin-top: 0;
+   margin-bottom: 2rem;
+   letter-spacing: 4px;
+}
+
+/* flex */
+.header,
+.topbar,
+.header__btn,
+.section-cards,
+.banner{
+    display: flex;
+}
+
+/* top bar menu */
+.topbar{
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 2em;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color:hsl(0, 0%, 100%);
+}
+.topbars__logo{
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+}
+.topbars__nav{
+    margin-left: auto;
+    
+}
+.topbars__items{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 2em;
+}
+.topbars__toggle{
+    display: none;
+    /* width: 25px; */
+}
+/* .topbars__toggle--img{
+    vertical-align: middle;
+} */
+
+/* header */
+.header{
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4em;
+    margin-bottom: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: url(../assets/city-438393_640.jpg) no-repeat center/cover;
+    background-color: hsla(17, 100%, 36%, 0.5);
+    background-blend-mode:color-burn;
+    color: #fff;
+}
+
+.header__title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+.header__btn{
+    justify-content: space-around;
+    width: 300px;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+/* secciones */
+.sections{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+}
+.sections__titles{
+    text-align: center;
+    font-size: 2rem;
+}
+.section-cards__img{
+    width: 300px;
+    max-width: 100%;
+}
+
+/* seccion de tarjetas */
+.section-cards{
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+.card{
+    position: relative;
+    width: 275px;
+    height: 375px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px  hsla(170, 83%, 39%, 0.2);
+    background-color: whitesmoke;
+}
+.section-cards__title,
+.section-cards__txt{
+    margin-left: 1em;
+}
+.section-card__title{
+    font-size: 1.3rem;
+}
+.section-cards__btn{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    box-shadow: initial;
+    color: white;
+}
+
+/* section banner */
+.section-banner{
+    height: 350px;
+    background-image: url(../assets/demonstration-767983_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner-gradient{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, hsl(17, 100%, 36%), hsla(17, 100%, 36%, 0.20) );
+}
+.banner{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 100%;
+    padding: 2rem;
+    color: white;
+}
+.banner__title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 0px 0px 10px white;
+    margin: 0;
+    line-height: 2rem;
+    text-align: center;
+}
+.banner__title--txt{
+    display: block;
+    font-size: 1.3rem;
+}
+.banner__foto{
+    display: flex;
+    width: 150px;
+    border: 2px solid hsla(170, 83%, 39%);
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.banner__foto--img{
+    width: 200px;
+    max-width: 100%;
+    object-fit: contain;
+}
+.mapa{
+    position: relative;
+    padding-top: 56.25%;
+}
+.mapa iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sections__mapa--txt{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
